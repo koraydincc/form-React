@@ -1,32 +1,35 @@
-import * as React from 'react';
-import Stack from '@mui/material/Stack';
+import React, { useState } from 'react';
 import Button from '@mui/material/Button';
-import { useState } from 'react';
 
 export default function ColorButtons(props) {
+  const [personelInfo, setPersonelInfo] = useState([]);
 
-   const [personelInfo, setPersonelInfo] = useState([])
+  const handlePersonel = () => {
+    if (props.firstName === '' || props.lastName === '' || props.email === '' || props.phoneNumber === '') {
+      alert('Lütfen tüm alanları doldurun !');
+      return;
+    }
 
-   const handlePersonel = () => {
-    personelInfo.push([{
-    ad: props.firstName,
-    soyad: props.lastName,
-    email: props.email,
-    numara: props.phoneNumber
-   }])
-   console.log(personelInfo)
-  }
+    const newPersonelInfo = {
+      ad: props.firstName,
+      soyad: props.lastName,
+      email: props.email,
+      numara: props.phoneNumber
+    };
+    console.log(newPersonelInfo)
+    // personelInfo dizisine newPersonelInfo yu ekledik
+    setPersonelInfo([...personelInfo, newPersonelInfo]);
 
-  
+    
 
+    alert(`Merhaba ${props.firstName} ${props.lastName}, en kısa zamanda iletişime geçeceğim. Sağlıklı günler dilerim..`);
+  };
 
   return (
-  
-     
-      <Button  variant="contained" color="success" onClick={handlePersonel}>
+    <div>
+      <Button type="button" variant="contained" color="success" onClick={handlePersonel}>
         İletişime Geç
       </Button>
-      
-
+    </div>
   );
 }
