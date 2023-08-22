@@ -3,9 +3,9 @@ import {NavLink} from 'react-router-dom'
 
 function Navbar() {
   return (
-    <nav>
+    <nav className='mainNav'>
         <NavLink to="/">Anasayfa</NavLink>
-        <NavLink to="/About">Hakkımda</NavLink>
+        <NavLink to="/Hakkımda">Hakkımda</NavLink>
     </nav>
   )
 }

@@ -1,12 +1,18 @@
 import React from 'react'
 import Navbar from '../components/Navbar'
+import { Link, Outlet } from 'react-router-dom'
+import InfoButton from '../components/InfoButon'
+import BenButton from '../components/BenButton'
 
 function About() {
   return (
     <div className='aboutPage'>
       <Navbar></Navbar>
-      <h2>Merhabalar Ben Oğuzhan Levent.  </h2>
-      <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed tLorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed t</p>
+      <nav>
+        <Link to='BenKimim'><BenButton></BenButton></Link>
+        <Link to='Herbalife'><InfoButton></InfoButton></Link>     
+      </nav>
+      <Outlet></Outlet>
     </div>
   )
 }
