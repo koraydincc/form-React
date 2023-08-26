@@ -1,0 +1,18 @@
+{
+    "members":[
+        {
+            "id":1,
+            "member":"Koray Dinç",
+            "photo":"images/koray.jpg",
+            "result":"Kilo Verme",
+            "content":" Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio molestiae harum at sint hic autem, dicta consequuntur temporibus, iure id modi, nisi voluptatibus quae sed quia! Ea nulla nam labore."
+        },
+        {
+            "id":2,
+            "member":"Oğuzhan Levent",
+            "photo":"images/oguz.jpeg",
+            "result":"Kilo Alma",
+            "content": " Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio molestiae harum at sint hic autem, dicta consequuntur temporibus, iure id modi, nisi voluptatibus quae sed quia! Ea nulla nam labore."
+        }
+    ]
+}

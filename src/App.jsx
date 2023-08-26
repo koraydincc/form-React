@@ -6,9 +6,16 @@ import NavBar from './components/Navbar'
 import Herbalife from "./pages/Herbalife";
 import WrongPage from "./components/WrongPage";
 import BenKimim from "./components/BenKimim";
+import Success from "./pages/Success";
+import { useEffect, useState } from "react";
+import axios from 'axios';
 
 
 function App() {
+
+
+  
+  
   return <div className="App">
     
      
@@ -20,6 +27,7 @@ function App() {
       </Route>
       <Route path="/herbalife" element={<Herbalife></Herbalife>} ></Route>
       <Route path="*" element={<WrongPage></WrongPage>}></Route>
+      <Route path="/Sonuclar" element={<Success ></Success>}></Route>
     </Routes>
     
 

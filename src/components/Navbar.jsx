@@ -5,7 +5,9 @@ function Navbar() {
   return (
     <nav className='mainNav'>
         <NavLink to="/">Anasayfa</NavLink>
+        <NavLink to="/Sonuclar">Sonuçlar</NavLink>
         <NavLink to="/Hakkımda">Hakkımda</NavLink>
+      
     </nav>
   )
 }

@@ -38,8 +38,8 @@ export default function BasicTextFields(props) {
       autoComplete="off"
 
     >
-      <TextField id="first-name" label="Adınız" variant="outlined" value={firstName} onChange={handleFirstNameChange} setFirstName={setFirstName} />
-      <TextField id="last-name" label="Soyadınız" variant="outlined" value={lastName} onChange={handleLastNameChange} setLastName={setLastName} />
+      <TextField id="first-name" label="Adınız" variant="outlined" value={firstName} onChange={handleFirstNameChange}  />
+      <TextField id="last-name" label="Soyadınız" variant="outlined" value={lastName} onChange={handleLastNameChange}  />
       <TextField type='number' id="phone-number" label="Telefon Numaranız" variant="outlined" value={phoneNumber} onChange={handlePhoneNumberChange} />
       <TextField type="email"  label="Email Adresiniz" variant="outlined" value={email} onChange={handleEmailChange} />
       <Button type="submit" className='formBtn' firstName={firstName} lastName={lastName} email={email} phoneNumber={phoneNumber}></Button>

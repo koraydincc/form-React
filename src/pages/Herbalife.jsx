@@ -4,8 +4,9 @@ import Navbar from '../components/Navbar'
 
 function Herbalife() {
   return (
+    
     <div className='herbalifePage'>
-     
+       
        <div className='herbalifePageInfo'>
            <h2>BİZ KİMİZ</h2>
            <p>

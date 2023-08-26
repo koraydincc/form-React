@@ -4,6 +4,7 @@ import SendIcon from '@mui/icons-material/Send';
 
 export default function ColorButtons(props) {
   const [personelInfo, setPersonelInfo] = useState([]);
+  
 
   const handlePersonel = () => {
     if (props.firstName === '' || props.lastName === '' || props.email === '' || props.phoneNumber === '') {
@@ -18,6 +19,9 @@ export default function ColorButtons(props) {
       email: props.email,
       numara: props.phoneNumber
     };
+    
+    
+
     console.log(newPersonelInfo)
     // personelInfo dizisine newPersonelInfo yu ekledik
     setPersonelInfo([...personelInfo, newPersonelInfo]);

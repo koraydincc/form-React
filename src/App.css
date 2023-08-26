@@ -17,6 +17,20 @@
   
 }
 
+.successPage{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+  gap: 20px;
+  
+}
+
+.successPage img{
+  width: 400px;
+  height: 400px;
+}
+
 .aboutPage{
   display: flex;
   flex-direction: column;
@@ -64,11 +78,35 @@ p {
   line-height:2;
 }
 
-h{
+.aboutNav button{
+  margin: 10px;
+
   
 }
 
+.prevNextBtn{
+  border: none;
+  background-color: white;
+  font-size: 30px;
+  color: #2e7d32;
+  cursor: pointer;
+}
 
+.membersCard{
+  display: flex;
+  justify-content: center;
+  width: 500px;
+  flex-wrap: wrap;
+  border: 1px solid gray;
+  border-radius: 20px;
+  padding: 5px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.membersCard h1{
+  color: red;
+}
 
 .mainNav {
   background-color:#2e7d32;
