@@ -52,7 +52,7 @@ function Success() {
 
     return (
         <div className='successPage'>
-            <Navbar></Navbar>
+          
             <button className='prevNextBtn' onClick={prevMembers}>
                 <ArrowBackIosIcon></ArrowBackIosIcon>
             </button>

@@ -9,6 +9,7 @@ import BenKimim from "./components/BenKimim";
 import Success from "./pages/Success";
 import { useEffect, useState } from "react";
 import axios from 'axios';
+import Footer from "./components/Footer";
 
 
 function App() {
@@ -18,7 +19,7 @@ function App() {
   
   return <div className="App">
     
-     
+    <NavBar></NavBar>
     <Routes>
       <Route path="/" element={<MainPage></MainPage>}></Route>
       <Route path="/Hakkımda" element={<About></About>}>
@@ -29,7 +30,7 @@ function App() {
       <Route path="*" element={<WrongPage></WrongPage>}></Route>
       <Route path="/Sonuclar" element={<Success ></Success>}></Route>
     </Routes>
-    
+    <Footer></Footer>
 
   </div>;
 }

@@ -13,7 +13,7 @@ function MainPage(props) {
 
   return (
     <div className="MainPage">
-      <Navbar></Navbar>
+      
       <form onSubmit={submitForm} className="form">
         <Avatar /> 
         <h4>Herbalife Yaşam Koçu: Oğuzhan Levent</h4>

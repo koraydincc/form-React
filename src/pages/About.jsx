@@ -12,7 +12,7 @@ function About({members}) {
 
   return (
     <div className='aboutPage'>
-      <Navbar></Navbar>
+    
       <nav className='aboutNav'>
         <Link to='BenKimim'><BenButton></BenButton></Link>
         <Link to='Herbalife'><InfoButton></InfoButton></Link>     
